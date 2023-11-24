@@ -28,3 +28,20 @@ def data_overview(df):
     print("\nTotal duplicated rows:", count_duplicated_rows)
     
     return overview
+
+
+def check_none_values(df):
+
+    '''
+    '''
+
+    none_percentage = {}
+
+    for column in df.columns:
+        none_count = df[column].apply(lambda x: x == "None").sum()
+        total_count = len(df[column])
+        percentage = (none_count / total_count) * 100
+        none_percentage[column] = percentage
+
+    result_df = pd.DataFrame(list(none_percentage.items()), columns=['Columna', 'Porcentaje None'])
+    print(result_df)
