@@ -1,5 +1,5 @@
  
-from fastapi import FastApi
+from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from starlette.responses import RedirectResponse
 import importlib
@@ -8,7 +8,7 @@ import querys
 
 importlib.reload(querys)
 
-app = FastApi()
+app = FastAPI()
 
 @app.get("/")
 def rooth():
@@ -19,26 +19,26 @@ def rooth():
 
 
 @app.get("/PlayTimeGenre")
-async def PlayTimeGenre(genero: str):
+def PlayTimeGenre(genero: str):
     result = querys.PlayTimeGenre(genero)
     return JSONResponse(content=result)
 
 @app.get("/UserForGenre")
-async def UserForGenre(genero: str):
+def UserForGenre(genero: str):
     result = querys.UserForGenre(genero)
     return JSONResponse(content=result)
 
 @app.get("/UsersRecommend")
-async def UsersRecommend(año: str):
+def UsersRecommend(año: str):
     result = querys.UsersRecommend(año)
     return JSONResponse(content=result)
 
 @app.get("/UsersWorstDeveloper")
-async def UsersWorstDeveloper(año: str):
+def UsersWorstDeveloper(año: str):
     result = querys.UsersWorstDeveloper(año)
     return JSONResponse(content=result)
 
 @app.get("/sentiment_analysis")
-async def sentiment_analysis(empresa_desarrolladora: str):
+def sentiment_analysis(empresa_desarrolladora: str):
     result = querys.sentiment_analysis(empresa_desarrolladora)
     return JSONResponse(content=result)
