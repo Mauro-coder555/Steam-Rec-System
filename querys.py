@@ -3,65 +3,77 @@ import pandas as pd
 
 # Load datasets
 items_df = pd.read_csv('data/generated/items.csv', dtype={'item_id': str})
-steam_games_df = pd.read_csv('data/generated/steam_games.csv')
+steam_games_df = pd.read_csv('data/generated/steam_games.csv',  dtype={'id': str})
 reviews_df = pd.read_csv('data/generated/reviews_sentiment.csv', dtype={'item_id': str})
 
 
+def prueba(genero: str):
+    return "hola"
 
-def PlayTimeGenre(genero: str):
-    print(items_df.columns)
-    print(reviews_df.columns)
-    print(items_df['item_id'].dtypes)
-    print(reviews_df['item_id'].dtypes)
+# Combinar la información relevante de los dataframes
+merged_df = pd.merge(items_df, steam_games_df, left_on='item_id', right_on='id')
 
-    # Filtrar juegos por género
-    juegos_genero = steam_games_df[steam_games_df['genres'].str.contains(genero, case=False, na=False)]
+def PlayTimeGenre(genero):
+    # Filtrar por el género especificado y casos donde release date no sea "Not specified"
+    genre_df = merged_df[(merged_df['genres'].str.contains(genero, case=False, na=False)) & 
+                         (merged_df['release_date'] != "Not specified") &
+                         (merged_df['id'] != "Not specified")]
 
-    # Combinar datasets
-    merged_df = pd.merge(items_df, reviews_df, on='item_id')
+    # Convertir 'release_date' a datetime
+    genre_df['release_date'] = pd.to_datetime(genre_df['release_date'], errors='coerce')
 
-    # Filtrar por juegos del género especificado
-    juegos_genero_ids = juegos_genero['id'].unique()
-    juegos_genero_df = merged_df[merged_df['item_id'].isin(juegos_genero_ids)]
+    # Eliminar filas con fechas no válidas
+    genre_df = genre_df.dropna(subset=['release_date'])
 
-    # Agrupar por año y calcular las horas jugadas totales
-    horas_por_anio = juegos_genero_df.groupby('release_date')['playtime_forever'].sum()
+    # Agrupar por año y sumar las horas jugadas
+    year_playtime = genre_df.groupby(genre_df['release_date'].dt.year)['playtime_forever'].sum()
 
     # Encontrar el año con más horas jugadas
-    año_mas_horas = horas_por_anio.idxmax()
+    max_year = year_playtime.idxmax()
 
-    return {"Año de lanzamiento con más horas jugadas para Género X": int(año_mas_horas)}
+    return str({f"Año de lanzamiento con más horas jugadas para el género {genero}": max_year})
 
 
 
-def UserForGenre(genero: str):
-    # Filtrar juegos por género
-    juegos_genero = steam_games_df[steam_games_df['genres'].str.contains(genero, case=False, na=False)]
 
-    # Combinar datasets
+
+def UserForGenre(genero):
+    # Combinar la información relevante de los dataframes
     merged_df = pd.merge(items_df, reviews_df, on='item_id')
 
-    # Filtrar por juegos del género especificado
-    juegos_genero_ids = juegos_genero['id'].unique()
-    juegos_genero_df = merged_df[merged_df['item_id'].isin(juegos_genero_ids)]
+    # Filtrar por el género especificado y casos donde release date y user_id no sean "Not specified"
+    genre_df = merged_df[(merged_df['genres'].str.contains(genero, case=False, na=False)) & 
+                         (merged_df['release_date'] != "Not specified") &
+                         (merged_df['user_id'] != "Not specified")]
 
-    # Agrupar por usuario y año y calcular las horas jugadas totales
-    horas_por_usuario_y_anio = juegos_genero_df.groupby(['user_id', 'release_date'])['playtime_forever'].sum()
+    # Convertir 'release_date' a datetime
+    genre_df['release_date'] = pd.to_datetime(genre_df['release_date'], errors='coerce')
+
+    # Eliminar filas con fechas no válidas
+    genre_df = genre_df.dropna(subset=['release_date'])
+
+    # Agrupar por usuario y sumar las horas jugadas
+    user_playtime = genre_df.groupby('user_id')['playtime_forever'].sum()
 
     # Encontrar el usuario con más horas jugadas
-    usuario_mas_horas = horas_por_usuario_y_anio.groupby('user_id').sum().idxmax()
+    max_user = user_playtime.idxmax()
 
-    # Obtener las horas jugadas por año para el usuario encontrado
-    horas_por_usuario_y_anio = horas_por_usuario_y_anio.loc[usuario_mas_horas[0]].reset_index()
-    horas_por_usuario_y_anio['release_date'] = pd.to_datetime(horas_por_usuario_y_anio['release_date']).dt.year
-    horas_por_usuario_y_anio = horas_por_usuario_y_anio.rename(columns={'release_date': 'Año', 'playtime_forever': 'Horas'})
+    # Filtrar por el usuario con más horas jugadas
+    max_user_df = genre_df[genre_df['user_id'] == max_user]
+
+    # Agrupar por año y sumar las horas jugadas
+    year_playtime = max_user_df.groupby(max_user_df['release_date'].dt.year)['playtime_forever'].sum()
 
     # Crear la lista de acumulación de horas jugadas por año
-    acumulacion_horas_por_anio = horas_por_usuario_y_anio.groupby('Año')['Horas'].sum().reset_index()
-    lista_acumulacion_horas = acumulacion_horas_por_anio.to_dict(orient='records')
+    horas_por_anio = [{"Año": int(year), "Horas": int(playtime)} for year, playtime in year_playtime.items()]
 
-    return {"Usuario con más horas jugadas para Género X": usuario_mas_horas[0],
-            "Horas jugadas": lista_acumulacion_horas}
+    # Crear el diccionario de retorno
+    result = {
+        "Usuario con más horas jugadas para Género": str(max_user),
+        "Horas jugadas": horas_por_anio
+    }
+
+    return str(result)
 
 
 def UsersRecommend(anio: str):
