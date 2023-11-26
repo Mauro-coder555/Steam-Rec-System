@@ -45,14 +45,14 @@ def UserForGenre(genero: str):
 @app.get("/UsersRecommend")
 def UsersRecommend(año: str):
     result = querys.UsersRecommend(año)
-    return JSONResponse(content=result)
+    return str(result)
 
 @app.get("/UsersWorstDeveloper")
 def UsersWorstDeveloper(año: str):
     result = querys.UsersWorstDeveloper(año)
-    return JSONResponse(content=result)
+    return str(result)
 
 @app.get("/sentiment_analysis")
 def sentiment_analysis(empresa_desarrolladora: str):
     result = querys.sentiment_analysis(empresa_desarrolladora)
-    return JSONResponse(content=result)
+    return str(result)
