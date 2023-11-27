@@ -45,3 +45,25 @@ def check_none_values(df):
 
     result_df = pd.DataFrame(list(none_percentage.items()), columns=['Columna', 'Porcentaje None'])
     print(result_df)
+
+
+def count_empty_strings(dataframe):
+    """
+    Count the number of records with empty strings in any column of string type.
+
+    Parameters:
+    - dataframe (pd.DataFrame): The input DataFrame.
+
+    Returns:
+    - int: Total number of records with empty strings in any string-type column.
+    """
+    # Get columns of string type
+    string_columns = dataframe.select_dtypes(include='object').columns
+
+    # Count records with empty strings in each string-type column
+    empty_string_counts = dataframe[string_columns].apply(lambda x: (x == "").sum(), axis=0)
+
+    # Sum the counts to get the total
+    total_empty_string_records = empty_string_counts.sum()
+
+    return total_empty_string_records
