@@ -12,7 +12,7 @@ from sklearn.metrics.pairwise import linear_kernel
 
 
 # Load datasets
-main_df = pd.read_csv('data/generated/main_dataframe.csv', dtype={'item_id': str, 'user_id': str})
+main_df = pd.read_csv('simplified-data/main_dataframe.csv', dtype={'item_id': str, 'user_id': str})
 
 def prueba(genero: str):
     return "hola"
