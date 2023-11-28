@@ -20,7 +20,7 @@ def prueba(genero: str):
 def PlayTimeGenre(genero):
     genre_df = main_df[(main_df['genres'].str.contains(genero, case=False, na=False)) & 
                        (main_df['release_date'] != "Not specified") &
-                       (main_df['id'] != "Not specified")]
+                       (main_df['item_id'] != "Not specified")]
 
     genre_df['release_date'] = pd.to_datetime(genre_df['release_date'], errors='coerce')
 
@@ -127,7 +127,7 @@ def recomendacion_juego(product_id):
     tfidf_vectorizer = TfidfVectorizer(stop_words='english')
     tfidf_matrix = tfidf_vectorizer.fit_transform(main_df['features'].fillna(''))
 
-    game_index = main_df[main_df['id'] == product_id].index[0]
+    game_index = main_df[main_df['item_id'] == product_id].index[0]
 
     cosine_similarities = linear_kernel(tfidf_matrix[game_index], tfidf_matrix).flatten()
 
