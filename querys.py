@@ -167,27 +167,30 @@ def sentiment_analysis(empresa_desarrolladora: str):
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import linear_kernel
 
 
+
+# 7. Función de recomendación
 def recomendacion_juego(product_id):
-   # Paso 1: Preprocesamiento y combinación de datos
-    merged_df = pd.merge(steam_games_df, reviews_df, left_on='id', right_on='item_id')
+    # Selecciona las columnas relevantes y combínalas en una sola columna 'features'
+    steam_games_df['features'] = steam_games_df['genres'] + ' ' + steam_games_df['tags'] + ' ' + steam_games_df['specs']
 
-    # Paso 2: Feature Engineering - Utiliza TF-IDF para el texto relevante
+    # Crea una matriz TF-IDF para representar cada juego en función de las características
     tfidf_vectorizer = TfidfVectorizer(stop_words='english')
-    tfidf_matrix = tfidf_vectorizer.fit_transform(
-        merged_df['tags'] + ' ' + merged_df['genres'] + ' ' + merged_df['sentiment_analysis'].astype(str)
-    )
+    tfidf_matrix = tfidf_vectorizer.fit_transform(steam_games_df['features'].fillna(''))
 
-    # Paso 3: Modelo de Similitud - Calcula la similitud del coseno
-    cosine_sim = cosine_similarity(tfidf_matrix, tfidf_matrix)
+    # Encuentra la posición del juego en el DataFrame
+    game_index = steam_games_df[steam_games_df['id'] == product_id].index[0]
 
-    # Paso 4: Generación de Recomendaciones
-    game_index = merged_df[merged_df['id'] == product_id].index[0]
-    sim_scores = list(enumerate(cosine_sim[game_index]))
-    sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)[1:6]
-    similar_games_indices = [i[0] for i in sim_scores]
+    # Calcula la similitud de coseno entre el juego seleccionado y todos los demás juegos
+    cosine_similarities = linear_kernel(tfidf_matrix[game_index], tfidf_matrix).flatten()
 
-    # Paso 5: Retorno de Resultados
-    recommended_games = merged_df.iloc[similar_games_indices]['title'].tolist()
-    return str(recommended_games)
+    # Obtiene los índices de los juegos más similares (excluyendo el propio juego)
+    similar_game_indices = cosine_similarities.argsort()[:-6:-1]
+
+    # Obtiene los títulos de los juegos más similares
+    recommended_titles = steam_games_df.iloc[similar_game_indices]['title'].tolist()
+
+    return str(recommended_titles)
