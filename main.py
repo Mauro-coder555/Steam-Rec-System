@@ -56,3 +56,8 @@ def UsersWorstDeveloper(año: str):
 def sentiment_analysis(empresa_desarrolladora: str):
     result = querys.sentiment_analysis(empresa_desarrolladora)
     return str(result)
+
+@app.get("/game recommendation")
+def sentiment_analysis(item: str):
+    result = querys.recomendacion_juego(item)
+    return str(result)

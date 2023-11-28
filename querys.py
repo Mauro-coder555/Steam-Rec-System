@@ -163,3 +163,31 @@ def sentiment_analysis(empresa_desarrolladora: str):
     }}
 
     return str(result_dict)
+
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
+
+def recomendacion_juego(product_id):
+   # Paso 1: Preprocesamiento y combinación de datos
+    merged_df = pd.merge(steam_games_df, reviews_df, left_on='id', right_on='item_id')
+
+    # Paso 2: Feature Engineering - Utiliza TF-IDF para el texto relevante
+    tfidf_vectorizer = TfidfVectorizer(stop_words='english')
+    tfidf_matrix = tfidf_vectorizer.fit_transform(
+        merged_df['tags'] + ' ' + merged_df['genres'] + ' ' + merged_df['sentiment_analysis'].astype(str)
+    )
+
+    # Paso 3: Modelo de Similitud - Calcula la similitud del coseno
+    cosine_sim = cosine_similarity(tfidf_matrix, tfidf_matrix)
+
+    # Paso 4: Generación de Recomendaciones
+    game_index = merged_df[merged_df['id'] == product_id].index[0]
+    sim_scores = list(enumerate(cosine_sim[game_index]))
+    sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)[1:6]
+    similar_games_indices = [i[0] for i in sim_scores]
+
+    # Paso 5: Retorno de Resultados
+    recommended_games = merged_df.iloc[similar_games_indices]['title'].tolist()
+    return str(recommended_games)
