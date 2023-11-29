@@ -12,7 +12,7 @@ importlib.reload(querys)
 app = FastAPI()
 
 
-# Configuración básica de CORS
+# Basic CORS configuration
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -25,12 +25,6 @@ app.add_middleware(
 @app.get("/")
 def rooth():
     return RedirectResponse(url="/docs/")
-
-
-@app.get("/Prueba")
-async def PlayTimeGenre(genero: str):  
-    return querys.prueba(str)
-
 
 @app.get("/PlayTimeGenre")
 async def PlayTimeGenre(genero: str):

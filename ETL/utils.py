@@ -43,7 +43,7 @@ def check_none_values(df):
         percentage = (none_count / total_count) * 100
         none_percentage[column] = percentage
 
-    result_df = pd.DataFrame(list(none_percentage.items()), columns=['Columna', 'Porcentaje None'])
+    result_df = pd.DataFrame(list(none_percentage.items()), columns=['Column', 'None %'])
     print(result_df)
 
 
