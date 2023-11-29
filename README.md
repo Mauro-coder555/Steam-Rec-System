@@ -10,11 +10,12 @@ Please refer to the following table for check all the files content:
 | 2  | ETL | .ipynb | Contains Notebooks with the ETL process for each Steam API Json                 |
 | 3  | ETL/utils | .py | Contains utility functions used for the ETL process                |
 | 4  | .gitignore | .git | Contains ignored raw data (Too heavy for be uploaded to Render) and a testing notebook|
-| 5  | EDA | .ipynb |It contains a view of the cleaned data and statistical analysis. Finally, the dataset is generated for use in queries. |
+| 5  | EDA | .ipynb |It contains a view of the cleaned data and statistical analysis|
 | 6  | requirements | .txt | Libraries required for backend functioning |
 | 7  | querys | .py | Contains functions used by the BackEnd (main) file and its end points|
 | 9  | main | .py | Contains HTTP request methods for BackEnd functionality|
 | 10 | requirements | .txt | Libraries required for backend functioning |
+| 11 | CSV-query-engine | .ipynb | Contains generation of datasets for use in queries|
 
 
 Link to raw datasets: https://drive.google.com/file/d/1CeBmBvvr043S-oL7ihuGSz8eLPFeNJFE/view?usp=sharing
