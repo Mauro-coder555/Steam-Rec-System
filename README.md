@@ -135,3 +135,6 @@ def game_recommendation(product_id):
 ```
 
  #### Queries are made available through the FastAPI framework, and Render is used to enable the API to be consumed from the web.
+
+
+ Link to deployment: https://steam-rec-system-deploy.onrender.com
