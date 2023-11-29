@@ -2,10 +2,8 @@
 import pandas as pd
 from datetime import datetime
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import linear_kernel
-
+from itertools import islice
 
 
 
@@ -67,12 +65,12 @@ def UsersRecommend(year: int) -> str:
     - year (int): The year for filtering the DataFrame.
 
     Output:
-    - str: A string representation of a list of dictionaries containing the game rankings for the specified year.
+    - str: A string representation of a top-3 list of dictionaries containing the game rankings for the specified year.
     """
     año_int = int(year)
     df_filtered = users_recommend_df[users_recommend_df['year'].astype(int) == año_int]
     df_sorted = df_filtered.sort_values(by='recommendations_count', ascending=False)
-    resultado = [{"Puesto {}".format(i + 1): row['item_id']} for i, (_, row) in enumerate(df_sorted.iterrows())]
+    resultado = [{"Puesto {}".format(i + 1): row['item_id']} for i, (_, row) in enumerate(islice(df_sorted.iterrows(), 3))]
     return str(resultado)
 
 
@@ -84,12 +82,12 @@ def UsersWorstDeveloper(año: int) -> str:
     - año (int): The year for filtering the DataFrame.
 
     Output:
-    - str: A string representation of a list of dictionaries containing the game rankings for the specified year.
+    - str: A string representation of a top-3 list of dictionaries containing the game rankings for the specified year.
     """
     año_int = int(año)
     df_filtered = users_worst_developer_df[users_worst_developer_df['year'].astype(int) == año_int]
     df_sorted = df_filtered.sort_values(by='least_recommended_count')
-    resultado = [{"Puesto {}".format(i + 1): row['item_id']} for i, (_, row) in enumerate(df_sorted.iterrows())]
+    resultado = [{"Puesto {}".format(i + 1): row['item_id']} for i, (_, row) in enumerate(islice(df_sorted.iterrows(), 3))]
     return str(resultado)
 
 
