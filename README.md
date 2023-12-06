@@ -14,8 +14,7 @@ Please refer to the following table for check all the files content:
 | 6  | requirements | .txt | Libraries required for backend functioning |
 | 7  | querys | .py | Contains functions used by the BackEnd (main) file and its end points|
 | 9  | main | .py | Contains HTTP request methods for BackEnd functionality|
-| 10 | requirements | .txt | Libraries required for backend functioning |
-| 11 | CSV-query-engine | .ipynb | Contains generation of datasets for use in queries|
+| 10 | CSV-query-engine | .ipynb | Contains generation of datasets for use in queries|
 
 
 Link to raw datasets: https://drive.google.com/file/d/1CeBmBvvr043S-oL7ihuGSz8eLPFeNJFE/view?usp=sharing
