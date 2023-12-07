@@ -97,7 +97,6 @@ Float values in the majority of columns represent null values and were managed c
 
 ## Game Analytics Functions
 
-### PlayTimeGenre
 
 ```python
 def PlayTimeGenre(genre: str):
