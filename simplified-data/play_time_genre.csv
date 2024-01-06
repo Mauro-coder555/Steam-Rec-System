@@ -1,190 +1,190 @@
 genre,year,max_playtime_hours
-Action,1990,1424.0
-Action,1994,580.0
-Action,1995,846.0
-Action,1996,19.0
-Action,1997,436.0
-Action,1998,36879.0
-Action,1999,17010.0
-Action,2000,356217.0
-Action,2001,1301.0
-Action,2002,4877.0
-Action,2003,35165.0
-Action,2004,388621.0
-Action,2005,36985.0
-Action,2006,22440.0
-Action,2007,16762.0
-Action,2008,72933.0
-Action,2009,224800.0
-Action,2010,189181.0
-Action,2011,99827.0
-Action,2012,216412.0
-Action,2013,129959.0
-Action,2014,19686.0
-Action,2015,24414.0
-Action,2016,20168.0
-Action,2017,120043.0
-Adventure,1990,52.0
-Adventure,1997,1577.0
-Adventure,1998,298.0
-Adventure,2000,73.0
-Adventure,2003,9632.0
-Adventure,2004,85.0
-Adventure,2005,340.0
-Adventure,2006,1199.0
-Adventure,2007,2257.0
-Adventure,2008,7393.0
-Adventure,2009,10643.0
-Adventure,2010,36699.0
-Adventure,2011,96358.0
-Adventure,2012,23148.0
-Adventure,2013,53244.0
-Adventure,2014,337453.0
-Adventure,2015,55027.0
-Adventure,2016,15780.0
-Adventure,2017,71512.0
-Animation &amp; Modeling,2015,8.0
-Casual,1997,204.0
-Casual,1999,740.0
-Casual,2006,4584.0
-Casual,2007,10517.0
-Casual,2008,10651.0
-Casual,2009,5825.0
-Casual,2010,2272.0
-Casual,2011,22859.0
-Casual,2012,23698.0
-Casual,2013,8045.0
-Casual,2014,337453.0
-Casual,2015,55027.0
-Casual,2016,15780.0
-Casual,2017,71512.0
-Early Access,2012,5257.0
-Early Access,2013,68432.0
-Early Access,2014,464.0
-Early Access,2015,1057.0
-Early Access,2016,221.0
-Free to Play,1999,740.0
-Free to Play,2003,35165.0
-Free to Play,2006,76.0
-Free to Play,2007,188.0
-Free to Play,2009,417.0
-Free to Play,2010,1986.0
-Free to Play,2011,60767.0
-Free to Play,2012,187157.0
-Free to Play,2013,136539.0
-Free to Play,2014,337453.0
-Free to Play,2015,55027.0
-Free to Play,2016,20168.0
-Free to Play,2017,120043.0
-Indie,1997,6.0
-Indie,1999,740.0
-Indie,2003,1079.0
-Indie,2004,1890.0
-Indie,2005,677.0
-Indie,2006,344931.0
-Indie,2007,394.0
-Indie,2008,11872.0
-Indie,2009,5825.0
-Indie,2010,16758.0
-Indie,2011,99827.0
-Indie,2012,61952.0
-Indie,2013,136539.0
-Indie,2014,5199.0
-Indie,2015,55027.0
-Indie,2016,20168.0
-Indie,2017,120043.0
-Massively Multiplayer,2003,35165.0
-Massively Multiplayer,2007,188.0
-Massively Multiplayer,2009,417.0
-Massively Multiplayer,2010,1986.0
-Massively Multiplayer,2011,60767.0
-Massively Multiplayer,2012,187157.0
-Massively Multiplayer,2013,136539.0
-Massively Multiplayer,2014,337453.0
-Massively Multiplayer,2015,14214.0
-Massively Multiplayer,2016,20168.0
-Massively Multiplayer,2017,120043.0
-Not specified,2011,20.0
-Not specified,2012,63.0
-RPG,1997,1191.0
-RPG,1998,171.0
-RPG,2000,73.0
-RPG,2002,16697.0
-RPG,2003,35165.0
-RPG,2005,12505.0
-RPG,2006,15119.0
-RPG,2007,9947.0
-RPG,2008,9150.0
-RPG,2009,18880.0
-RPG,2010,38991.0
-RPG,2011,99827.0
-RPG,2012,187157.0
-RPG,2013,136539.0
-RPG,2014,337453.0
-RPG,2015,55027.0
-RPG,2016,15780.0
-RPG,2017,120043.0
-Racing,2003,689.0
-Racing,2004,4.0
-Racing,2005,540.0
-Racing,2006,3539.0
-Racing,2007,7010.0
-Racing,2008,9628.0
-Racing,2009,8543.0
-Racing,2010,2880.0
-Racing,2011,2611.0
-Racing,2012,15675.0
-Racing,2013,2941.0
-Racing,2014,4709.0
-Racing,2015,13433.0
-Racing,2016,2729.0
-Simulation,1998,200.0
-Simulation,2001,3188.0
-Simulation,2002,15.0
-Simulation,2003,4280.0
-Simulation,2004,1890.0
-Simulation,2006,344931.0
-Simulation,2007,10517.0
-Simulation,2008,34122.0
-Simulation,2009,64965.0
-Simulation,2010,16758.0
-Simulation,2011,32289.0
-Simulation,2012,46093.0
-Simulation,2013,97048.0
-Simulation,2014,3018.0
-Simulation,2015,55027.0
-Simulation,2016,2233.0
-Simulation,2017,120043.0
-Sports,2006,37.0
-Sports,2008,9628.0
-Sports,2009,1380.0
-Sports,2010,2272.0
-Sports,2011,2611.0
-Sports,2012,15675.0
-Sports,2013,2941.0
-Sports,2014,122.0
-Sports,2015,13433.0
-Sports,2016,2729.0
-Sports,2017,12.0
-Strategy,1993,33.0
-Strategy,1995,4248.0
-Strategy,1997,1682.0
-Strategy,2001,33225.0
-Strategy,2003,35165.0
-Strategy,2004,48534.0
-Strategy,2005,3389.0
-Strategy,2006,49700.0
-Strategy,2007,3224.0
-Strategy,2008,95871.0
-Strategy,2009,49861.0
-Strategy,2010,145015.0
-Strategy,2011,99827.0
-Strategy,2012,86255.0
-Strategy,2013,97048.0
-Strategy,2014,13337.0
-Strategy,2015,55027.0
-Strategy,2016,980.0
-Strategy,2017,1222.0
-Utilities,2006,1629.0
-Utilities,2014,1.0
-Video Production,2015,8.0
+action,1990,1424.0
+action,1994,580.0
+action,1995,846.0
+action,1996,19.0
+action,1997,436.0
+action,1998,36879.0
+action,1999,17010.0
+action,2000,356217.0
+action,2001,1301.0
+action,2002,4877.0
+action,2003,35165.0
+action,2004,388621.0
+action,2005,36985.0
+action,2006,22440.0
+action,2007,16762.0
+action,2008,72933.0
+action,2009,224800.0
+action,2010,189181.0
+action,2011,99827.0
+action,2012,216412.0
+action,2013,129959.0
+action,2014,19686.0
+action,2015,24414.0
+action,2016,20168.0
+action,2017,120043.0
+adventure,1990,52.0
+adventure,1997,1577.0
+adventure,1998,298.0
+adventure,2000,73.0
+adventure,2003,9632.0
+adventure,2004,85.0
+adventure,2005,340.0
+adventure,2006,1199.0
+adventure,2007,2257.0
+adventure,2008,7393.0
+adventure,2009,10643.0
+adventure,2010,36699.0
+adventure,2011,96358.0
+adventure,2012,23148.0
+adventure,2013,53244.0
+adventure,2014,4012.0
+adventure,2015,55027.0
+adventure,2016,15780.0
+adventure,2017,71512.0
+animation &amp; modeling,2015,8.0
+casual,1997,204.0
+casual,1999,740.0
+casual,2006,4584.0
+casual,2007,10517.0
+casual,2008,10651.0
+casual,2009,5825.0
+casual,2010,2272.0
+casual,2011,22859.0
+casual,2012,23698.0
+casual,2013,8045.0
+casual,2014,4012.0
+casual,2015,55027.0
+casual,2016,15780.0
+casual,2017,71512.0
+early access,2012,5257.0
+early access,2013,68432.0
+early access,2014,464.0
+early access,2015,1057.0
+early access,2016,221.0
+free to play,1999,740.0
+free to play,2003,35165.0
+free to play,2006,76.0
+free to play,2007,188.0
+free to play,2009,417.0
+free to play,2010,1986.0
+free to play,2011,60767.0
+free to play,2012,187157.0
+free to play,2013,136539.0
+free to play,2014,19686.0
+free to play,2015,55027.0
+free to play,2016,20168.0
+free to play,2017,120043.0
+indie,1997,6.0
+indie,1999,740.0
+indie,2003,1079.0
+indie,2004,1890.0
+indie,2005,677.0
+indie,2006,344931.0
+indie,2007,394.0
+indie,2008,11872.0
+indie,2009,5825.0
+indie,2010,16758.0
+indie,2011,99827.0
+indie,2012,61952.0
+indie,2013,136539.0
+indie,2014,5199.0
+indie,2015,55027.0
+indie,2016,20168.0
+indie,2017,120043.0
+massively multiplayer,2003,35165.0
+massively multiplayer,2007,188.0
+massively multiplayer,2009,417.0
+massively multiplayer,2010,1986.0
+massively multiplayer,2011,60767.0
+massively multiplayer,2012,187157.0
+massively multiplayer,2013,136539.0
+massively multiplayer,2014,19686.0
+massively multiplayer,2015,14214.0
+massively multiplayer,2016,20168.0
+massively multiplayer,2017,120043.0
+not specified,2011,20.0
+not specified,2012,63.0
+racing,2003,689.0
+racing,2004,4.0
+racing,2005,540.0
+racing,2006,3539.0
+racing,2007,7010.0
+racing,2008,9628.0
+racing,2009,8543.0
+racing,2010,2880.0
+racing,2011,2611.0
+racing,2012,15675.0
+racing,2013,2941.0
+racing,2014,4709.0
+racing,2015,13433.0
+racing,2016,2729.0
+rpg,1997,1191.0
+rpg,1998,171.0
+rpg,2000,73.0
+rpg,2002,16697.0
+rpg,2003,35165.0
+rpg,2005,12505.0
+rpg,2006,15119.0
+rpg,2007,9947.0
+rpg,2008,9150.0
+rpg,2009,18880.0
+rpg,2010,38991.0
+rpg,2011,99827.0
+rpg,2012,187157.0
+rpg,2013,136539.0
+rpg,2014,7962.0
+rpg,2015,55027.0
+rpg,2016,15780.0
+rpg,2017,120043.0
+simulation,1998,200.0
+simulation,2001,3188.0
+simulation,2002,15.0
+simulation,2003,4280.0
+simulation,2004,1890.0
+simulation,2006,344931.0
+simulation,2007,10517.0
+simulation,2008,34122.0
+simulation,2009,64965.0
+simulation,2010,16758.0
+simulation,2011,32289.0
+simulation,2012,46093.0
+simulation,2013,97048.0
+simulation,2014,3018.0
+simulation,2015,55027.0
+simulation,2016,2233.0
+simulation,2017,120043.0
+sports,2006,37.0
+sports,2008,9628.0
+sports,2009,1380.0
+sports,2010,2272.0
+sports,2011,2611.0
+sports,2012,15675.0
+sports,2013,2941.0
+sports,2014,122.0
+sports,2015,13433.0
+sports,2016,2729.0
+sports,2017,12.0
+strategy,1993,33.0
+strategy,1995,4248.0
+strategy,1997,1682.0
+strategy,2001,33225.0
+strategy,2003,35165.0
+strategy,2004,48534.0
+strategy,2005,3389.0
+strategy,2006,49700.0
+strategy,2007,3224.0
+strategy,2008,95871.0
+strategy,2009,49861.0
+strategy,2010,145015.0
+strategy,2011,99827.0
+strategy,2012,86255.0
+strategy,2013,97048.0
+strategy,2014,13337.0
+strategy,2015,55027.0
+strategy,2016,980.0
+strategy,2017,1222.0
+utilities,2006,1629.0
+utilities,2014,1.0
+video production,2015,8.0

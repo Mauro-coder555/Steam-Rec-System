@@ -14,7 +14,8 @@ Please refer to the following table for check all the files content:
 | 6  | requirements | .txt | Libraries required for backend functioning |
 | 7  | querys | .py | Contains functions used by the BackEnd (main) file and its end points|
 | 9  | main | .py | Contains HTTP request methods for BackEnd functionality|
-| 10 | CSV-query-engine | .ipynb | Contains generation of datasets for use in queries|
+| 10 | requirements | .txt | Libraries required for backend functioning |
+  11 | CSV-query-engine | .ipynb | Contains generation of datasets for use in queries|
 
 
 Link to raw datasets: https://drive.google.com/file/d/1CeBmBvvr043S-oL7ihuGSz8eLPFeNJFE/view?usp=sharing
@@ -97,6 +98,7 @@ Float values in the majority of columns represent null values and were managed c
 
 ## Game Analytics Functions
 
+### PlayTimeGenre
 
 ```python
 def PlayTimeGenre(genre: str):
@@ -134,6 +136,3 @@ def game_recommendation(product_id):
 ```
 
  #### Queries are made available through the FastAPI framework, and Render is used to enable the API to be consumed from the web.
-
-
- Link to deployment: https://steam-rec-system-deploy.onrender.com
