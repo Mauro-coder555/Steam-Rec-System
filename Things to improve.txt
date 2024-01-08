@@ -1,5 +1,3 @@
-*It's necessary to standardize strings, such as defining that all strings should be entirely in lowercase."
-
 *Missing data in columns could have been completed by using information from other columns, for instance, filling in 'app_name' or 'item_id' in the game dataset using information from the URL.
 
 *More depth was needed in the development of Exploratory Data Analysis (EDA).
