@@ -143,3 +143,5 @@ def game_recommendation(product_id):
 
 
 Link to Render deployment: https://steam-rec-system-deploy.onrender.com
+
+Note: Due to updates in the input datasets, some output from the queries may differ from what is shown in the video; however, the functionality remains the same.

@@ -25,6 +25,7 @@ def PlayTimeGenre(genre: str) -> str:
 
     Input:
     - genre (str): The genre for filtering the DataFrame.
+      Uppercase or lowercase of the parameter will not affect the result
 
     Output:
     - str: A string representation of a dictionary containing the year of release with the most playtime for the specified genre.
@@ -42,6 +43,7 @@ def UserForGenre(genre: str) -> str:
 
     Input:
     - genre (str): The genre for filtering the DataFrame.
+      Uppercase or lowercase of the parameter will not affect the result
 
     Output:
     - str: A string representation of a dictionary containing the user with the most played hours for the specified genre and a list of accumulated hours per year.
@@ -68,6 +70,7 @@ def UsersRecommend(year: int) -> str:
 
     Output:
     - str: A string representation of a top-3 list of dictionaries containing the game rankings for the specified year.
+      If the provided year is not within the valid range in the dataset, returns "Invalid year".
     """
     year = int(year) if users_recommend_df['year'].min() <= int(year) <= users_recommend_df['year'].max() else "Invalid year"
     if(year == "Invalid year" ):
@@ -89,6 +92,7 @@ def UsersWorstDeveloper(year: int) -> str:
 
     Output:
     - str: A string representation of a top-3 list of dictionaries containing the game rankings for the specified year.
+      If the provided year is not within the valid range in the dataset, returns "Invalid year".
     """
     year = int(year) if users_worst_developer_df['year'].min() <= int(year) <= users_worst_developer_df['year'].max() else "Invalid year"
     if(year == "Invalid year" ):
@@ -105,7 +109,7 @@ def sentiment_analysis(developer_company: str) -> dict:
 
     Input:
     - developer_company (str): The developer's name for filtering the DataFrame.
-
+      Uppercase or lowercase of the parameter will not affect the result
     Output:
     - dict: A dictionary containing sentiment counts for the specified developer.
     """
@@ -123,10 +127,10 @@ def recomendacion_juego(product_input: str) -> list:
     """
     Recommends similar games based on content using TF-IDF and cosine similarity.
 
-    Args:
-        product_input (str): Either the ID or the name of the game.
-
-    Returns:
+    Input:
+    - product_input (str): Either the ID or the name of the game.
+      Uppercase or lowercase of the parameter will not affect the result
+    Output:
         list: List containing information about the recommended games (ID and name).
               If no game is found, a message is included in the list.
     """
