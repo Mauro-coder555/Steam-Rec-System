@@ -10,31 +10,82 @@ from itertools import islice
 # Load datasets
 
 
-play_time_genre_df = pd.read_csv('simplified-data/play_time_genre.csv')
+developer_df = pd.read_csv('simplified-data/developer_df.csv')
+userdata_df = pd.read_csv('simplified-data/userdata_df.csv')
 user_for_genre_df = pd.read_csv('simplified-data/user_for_genre.csv')
-users_recommend_df = pd.read_csv('simplified-data/users_recommend.csv')
-users_worst_developer_df = pd.read_csv('simplified-data/users_worst_developer.csv')
+best_developer_year = pd.read_csv('simplified-data/best_developer_year.csv')
 sentiment_analysis_df = pd.read_csv('simplified-data/sentiment_analysis.csv')
 game_recomendation_df = pd.read_csv('simplified-data/game_recomendation.csv')
 
 
 
-def PlayTimeGenre(genre: str) -> str:
+def developer(desarrollador: str) -> dict:
     """
-    Filter the DataFrame for the provided genre and find the year with the most playtime.
+    Retrieve information for a given developer.
 
-    Input:
-    - genre (str): The genre for filtering the DataFrame.
-      Uppercase or lowercase of the parameter will not affect the result
+    Parameters:
+    - developer_name (str): The name of the developer to retrieve information for.
 
-    Output:
-    - str: A string representation of a dictionary containing the year of release with the most playtime for the specified genre.
+    Returns:
+    - dict: A dictionary containing information about the developer, including 'year',
+            'items quantity', 'free content', and 'free content percentage'.
+            If the developer is not found, the dictionary will contain a message.
     """
-    genre = genre.lower()
-    genre_df = play_time_genre_df[play_time_genre_df['genre'] == genre]
-    max_playtime_index = genre_df['max_playtime_hours'].idxmax()
-    year_with_max_playtime = genre_df.loc[max_playtime_index, 'year']
-    return str({"Year of release with the most playtime for {} : {}".format(genre, year_with_max_playtime)})
+    # Filter the dataframe by the provided developer
+    desarrollador = desarrollador.lower()
+    developer_data = developer_df[developer_df['developer'] == desarrollador]
+
+    # Check if the developer was found
+    if developer_data.empty:
+        return {"message": f"No data found for developer: {desarrollador}"}
+    else:
+        # Retrieve 'year', 'items quantity', and 'free content' columns
+        year = developer_data['year'].values[0]
+        items_quantity = developer_data['items quantity'].values[0]
+        free_content = developer_data['free content'].values[0]
+
+        # Calculate the percentage of free content
+        total_items = developer_data['items quantity'].sum()
+        free_content_percentage = (free_content / total_items) * 100 if total_items > 0 else 0
+
+        # Return a dictionary with the requested columns and percentage
+        return {
+            'year': year,
+            'items quantity': items_quantity,
+            'free content percentage': free_content_percentage
+        }
+
+def userdata(User_id: str) -> dict:
+    """
+    Retrieve information for a given user.
+
+    Parameters:
+    - user_id (str): The ID of the user to retrieve information for.
+
+    Returns:
+    - dict: A dictionary containing information about the user, including
+            'spent money', 'recommendation percentage', and 'items quantity'.
+            If the user is not found, the dictionary will contain a message.
+    """
+    # Check if the user exists in the user_info_df dataframe
+    User_id = User_id.lower
+    user_data = userdata_df[userdata_df['User_id'] == User_id]
+
+    # Check if the user was found
+    if user_data.empty:
+        return {"message": f"No data found for user: {User_id}"}
+    else:
+        # Retrieve 'spent money', 'recommendation percentage', and 'items quantity'
+        spent_money = user_data['price'].values[0]
+        recommendation_percentage = user_data['recommendation percentage'].values[0]
+        items_quantity = user_data['item_id'].values[0]
+
+        # Return a dictionary with the requested information
+        return {
+            'spent money': spent_money,
+            'recommendation percentage': recommendation_percentage,
+            'items quantity': items_quantity
+        }
 
 
 def UserForGenre(genre: str) -> str:
@@ -61,9 +112,11 @@ def UserForGenre(genre: str) -> str:
     return str(to_return)
 
 
-def UsersRecommend(year: int) -> str:
+
+def best_developer_year(year: int) -> str:
     """
-    Filter the DataFrame for the provided year, sort it by the number of recommendations in descending order, and create a list of dictionaries with the game rankings.
+    Filter the DataFrame for the provided year, sort it by the most recommended count in descending order,
+    and create a list of dictionaries with the game rankings.
 
     Input:
     - year (int): The year for filtering the DataFrame.
@@ -72,36 +125,23 @@ def UsersRecommend(year: int) -> str:
     - str: A string representation of a top-3 list of dictionaries containing the game rankings for the specified year.
       If the provided year is not within the valid range in the dataset, returns "Invalid year".
     """
-    year = int(year) if users_recommend_df['year'].min() <= int(year) <= users_recommend_df['year'].max() else "Invalid year"
-    if(year == "Invalid year" ):
-        return str(year)
+    # Convert the input year to an integer
+    year = int(year)
+    
+    # Check if the provided year is within the valid range in the dataset
+    valid_year_range = (merged_df_recommended['year'].min(), merged_df_recommended['year'].max())
+    if valid_year_range[0] <= year <= valid_year_range[1]:
+        # Filter the DataFrame for the specified year
+        df_filtered = merged_df_recommended[merged_df_recommended['year'] == year]
+        
+        # Sort the DataFrame by the most recommended count in descending order
+        df_sorted = df_filtered.sort_values(by='most_recommended_count', ascending=False)
+        
+        # Create a list of dictionaries with the top 3 game rankings
+        resultado = [{"Rank {}".format(i + 1): row['item_id']} for i, (_, row) in enumerate(islice(df_sorted.iterrows(), 3))]
+        return str(resultado)
     else:
-        año_int = int(year)
-        df_filtered = users_recommend_df[users_recommend_df['year'].astype(int) == año_int]
-        df_sorted = df_filtered.sort_values(by='recommendations_count', ascending=False)
-        resultado = [{"Puesto {}".format(i + 1): row['item_id']} for i, (_, row) in enumerate(islice(df_sorted.iterrows(), 3))]
-        return str(resultado)
-
-
-def UsersWorstDeveloper(year: int) -> str:
-    """
-    Filter the DataFrame for the provided year, sort it by the least recommended count in ascending order, and create a list of dictionaries with the game rankings.
-
-    Input:
-    - año (int): The year for filtering the DataFrame.
-
-    Output:
-    - str: A string representation of a top-3 list of dictionaries containing the game rankings for the specified year.
-      If the provided year is not within the valid range in the dataset, returns "Invalid year".
-    """
-    year = int(year) if users_worst_developer_df['year'].min() <= int(year) <= users_worst_developer_df['year'].max() else "Invalid year"
-    if(year == "Invalid year" ):
-        return str(year)
-    else:      
-        df_filtered = users_worst_developer_df[users_worst_developer_df['year'].astype(int) == year]
-        df_sorted = df_filtered.sort_values(by='least_recommended_count')
-        resultado = [{"Puesto {}".format(i + 1): row['item_id']} for i, (_, row) in enumerate(islice(df_sorted.iterrows(), 3))]
-        return str(resultado)
+        return "Invalid year"
 
 def sentiment_analysis(developer_company: str) -> dict:
     """
