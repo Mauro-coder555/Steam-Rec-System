@@ -26,9 +26,14 @@ app.add_middleware(
 def rooth():
     return RedirectResponse(url="/docs/")
 
-@app.get("/PlayTimeGenre")
-async def PlayTimeGenre(genero: str):
-    result = querys.PlayTimeGenre(genero)
+@app.get("/developer")
+def developer(desarrollador: str):
+    result = querys.developer(desarrollador)
+    return str(result)
+
+@app.get("/userdata")
+def userdata(User_id: str):
+    result = querys.userdata(User_id)
     return str(result)
 
 @app.get("/UserForGenre")
@@ -36,19 +41,14 @@ def UserForGenre(genero: str):
     result = querys.UserForGenre(genero)
     return str(result)
 
-@app.get("/UsersRecommend")
-def UsersRecommend(año: str):
-    result = querys.UsersRecommend(año)
+@app.get("/best_developer_year")
+def best_developer_year(año: int):
+    result = querys.best_developer_year(año)
     return str(result)
 
-@app.get("/UsersWorstDeveloper")
-def UsersWorstDeveloper(año: str):
-    result = querys.UsersWorstDeveloper(año)
-    return str(result)
-
-@app.get("/sentiment_analysis")
-def sentiment_analysis(empresa_desarrolladora: str):
-    result = querys.sentiment_analysis(empresa_desarrolladora)
+@app.get("/developer_reviews_analysis")
+def developer_reviews_analysis(desarrolladora: str):
+    result = querys.developer_reviews_analysis(desarrolladora)
     return str(result)
 
 @app.get("/game recommendation")

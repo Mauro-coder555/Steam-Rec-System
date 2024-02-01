@@ -1,0 +1,977 @@
+year,developer,item_id,most_recommended_count
+2010,bioware,17450,13
+2010,obsidian entertainment,22380,66
+2011,aspyr studios,32500,1
+2011,avalanche studios,8190,151
+2011,bethesda game studios,22370,45
+2011,bohemia interactive,33930,24
+2011,criterion games,24740,59
+2011,extend studio,92300,1
+2011,facepunch studios,4000,19050
+2011,"firaxis games,aspyr (mac, linux)",8930,159
+2011,firemint,62000,1
+2011,frozenbyte,35700,23
+2011,gas powered games,40100,28
+2011,gsc game world,20510,2
+2011,id software,2200,30
+2011,id software,9200,4
+2011,"infinity ward,aspyr (mac)",10180,338
+2011,ion storm,6910,46
+2011,lazy 8 studios,26500,5
+2011,minmax games ltd.,107200,2
+2011,overkill software,24240,101
+2011,"raven software,aspyr (mac)",6030,3
+2011,re-logic,105600,2838
+2011,relic entertainment,4560,278
+2011,supergiant games,107100,32
+2011,taleworlds entertainment,48700,30
+2011,team meat,40800,53
+2011,treyarch,42700,179
+2011,trion worlds,39120,5
+2011,tripwire interactive,1250,752
+2011,tripwire interactive,35450,32
+2011,valve,550,5208
+2011,valve,620,1314
+2011,valve,70,1160
+2012,3 sprockets,207250,11
+2012,arkane studios,205100,11
+2012,arrowhead game studios,42910,141
+2012,avalanche studios,8190,151
+2012,best way,7830,3
+2012,bioware,17460,21
+2012,bioware,24980,11
+2012,bohemia interactive,33930,48
+2012,criterion games,47870,17
+2012,daybreak game company,218230,348
+2012,dice,17410,116
+2012,double fine productions,3830,554
+2012,edmund mcmillen and florian himsl,113200,455
+2012,eyebrow interactive,72000,1
+2012,facepunch studios,4000,133350
+2012,fromsoftware,211420,5
+2012,gaming minds,205610,1
+2012,gearbox software,8980,100
+2012,gearbox software,15390,1
+2012,"gearbox software,aspyr (mac &amp; linux)",49520,564
+2012,gsc game world,20510,2
+2012,hardsuit labs,209870,35
+2012,"infinity ward,aspyr (mac)",10180,338
+2012,interplay inc.,38400,5
+2012,ion storm,6910,46
+2012,"ironclad games,stardock entertainment",204880,3
+2012,"monolith productions, inc.",206210,46
+2012,paradox development studio,25800,1
+2012,positech games,41800,2
+2012,"raven software,aspyr (mac)",6020,17
+2012,re-logic,105600,10406
+2012,relic,55150,10
+2012,remedy entertainment,108710,11
+2012,robot entertainment,209270,9
+2012,rockstar studios,204100,4
+2012,ronimo games,204300,126
+2012,stardock entertainment,202200,2
+2012,subset games,212680,31
+2012,supergiant games,107100,16
+2012,taleworlds entertainment,48700,30
+2012,taleworlds entertainment,22100,9
+2012,telltale games,31280,166
+2012,telltale games,207610,50
+2012,the behemoth,204360,112
+2012,the odd gentlemen,40930,3
+2012,three rings,99910,1
+2012,torn banner studios,219640,63
+2012,trendy entertainment,65800,130
+2012,tripwire interactive,1250,376
+2012,tripwire interactive,35450,32
+2012,troika games,2600,76
+2012,valve,240,30579
+2012,valve,220,16944
+2012,valve,550,6944
+2012,wild shadow studios,200210,142
+2012,yager development,50300,6
+2013,2dengine.com,11360,1
+2013,"2k boston,2k australia",7670,536
+2013,"2k czech,feral interactive (mac)",50130,50
+2013,3909,239030,18
+2013,5th cell media,218680,120
+2013,5th cell media,249870,2
+2013,800 north and digital ranch,70000,174
+2013,abbey games,222730,4
+2013,ace team,22200,10
+2013,ace team,22230,4
+2013,alexander bruce,219890,8
+2013,amanita design,40700,12
+2013,archive entertainment,250420,16
+2013,arkane studios,205100,22
+2013,arrowhead game studios,42910,1128
+2013,arrowhead game studios,204080,4
+2013,artery games,45100,7
+2013,aspyr,214630,1
+2013,aspyr studios,32500,1
+2013,avalanche studios,8190,1057
+2013,bethesda game studios,22370,135
+2013,"big huge games,38 studios",102500,2
+2013,bioware,17460,21
+2013,bioware,24980,11
+2013,bioware,47810,6
+2013,"bioware,aspyr (mac)",32370,57
+2013,black pants studio,205910,3
+2013,bohemia interactive,221100,304
+2013,bohemia interactive,107410,180
+2013,bohemia interactive,33930,96
+2013,bossa studios,233720,160
+2013,carbon games,206500,12
+2013,chucklefish,211820,418
+2013,cobra mobile,206690,1
+2013,codebrush games,207230,21
+2013,"codemasters racing,feral interactive (mac)",44350,3
+2013,coffee stain studios,210770,9
+2013,cold beam games,49600,5
+2013,creative assembly,214950,36
+2013,critical studio,218130,3
+2013,croteam,41000,4
+2013,cryptic studios,109600,240
+2013,cryptic studios,9900,10
+2013,"crystal dynamics,feral interactive (mac),feral interactive (linux)",203160,54
+2013,day 1 studios,21100,17
+2013,daybreak game company,218230,1392
+2013,deep silver volition,206420,32
+2013,dennaton games,219150,12
+2013,devil's details,203750,1
+2013,dice,17410,232
+2013,digital extremes,230410,3625
+2013,dontnod entertainment,228300,4
+2013,double fine productions,3830,554
+2013,doubledutch games,207140,2
+2013,dovetail games,24010,19
+2013,dragonfly,239660,24
+2013,dylan fitterer,12900,101
+2013,ea los angeles,17480,52
+2013,ea redwood shores,17470,221
+2013,edge of reality,208090,534
+2013,edmund mcmillen and florian himsl,113200,728
+2013,eggtooth team,65560,2
+2013,ensemble studios,105450,36
+2013,eugen systems,222750,2
+2013,exato games studio,241720,2
+2013,eyedentity games inc.,11610,16
+2013,facepunch studios,4000,1390650
+2013,facepunch studios,252490,420
+2013,farsight studios,238260,4
+2013,firaxis games,3900,6
+2013,"firaxis games,aspyr (mac, linux)",8930,1908
+2013,"firaxis games,feral interactive (mac),feral interactive (linux)",200510,96
+2013,firefly studios,47410,17
+2013,firefly studios,47400,1
+2013,freebird games,206440,2
+2013,fromsoftware,211420,25
+2013,frozenbyte,35720,24
+2013,frozenbyte,35700,23
+2013,funcom,215280,3
+2013,gaijin entertainment,7510,3
+2013,gaijin games,63710,1
+2013,galactic cafe,221910,8
+2013,gas powered games,40100,28
+2013,gearbox software,8980,50
+2013,"gearbox software,aspyr (mac &amp; linux)",49520,1880
+2013,giants software,220260,39
+2013,going loud studios,230050,6
+2013,"gravity, inc.",231060,4
+2013,greenheart games,239820,6
+2013,grey havens,99900,1218
+2013,hardsuit labs,209870,245
+2013,hi-rez studios,17080,340
+2013,humble hearts llc,236090,1
+2013,id software,9180,20
+2013,id software,9200,8
+2013,infinity ward,209160,18
+2013,"infinity ward,aspyr (mac)",10180,1014
+2013,introversion software,233450,36
+2013,invent4 entertainment,34900,84
+2013,"ironclad games,stardock entertainment",204880,6
+2013,"irrational games,aspyr (mac),virtual programming (linux)",8870,88
+2013,jagex limited,224540,952
+2013,klei entertainment,214560,4
+2013,kog,237310,10
+2013,lukewarm media,215470,42
+2013,mindstorm studios,25500,7
+2013,minmax games ltd.,107200,2
+2013,"monolith productions, inc.",206210,230
+2013,"monolith productions, inc.,timegate",21090,2
+2013,muse games,209080,30
+2013,"netherrealm studios,high voltage software",237110,2
+2013,nexon,216150,39
+2013,nexon,212160,3
+2013,ninja theory,220440,4
+2013,no more room in hell team,224260,969
+2013,not specified,236390,600
+2013,not specified,218620,460
+2013,not specified,223750,2
+2013,obsidian entertainment,22380,264
+2013,obsidian entertainment,34010,1
+2013,"obsidian entertainment,aspyr (mac, linux, &amp; windows update)",208580,3
+2013,overkill software,24240,606
+2013,pandemic studios,6060,522
+2013,paradox development studio,203770,18
+2013,phosphor games studio,247730,2
+2013,playdead,48000,76
+2013,pocketwatch games,113020,8
+2013,positech games,41800,2
+2013,power of 2,213650,2
+2013,power of 2,35480,1
+2013,radical entertainment,10150,17
+2013,re-logic,105600,35002
+2013,reality pump studios,7520,3
+2013,rebellion,227100,6
+2013,recoil games,107800,3
+2013,red barrels,238320,2
+2013,relic,55150,10
+2013,relic entertainment,4570,26
+2013,"relic entertainment,feral interactive (mac),feral interactive (linux)",231430,15
+2013,"relic entertainment,feral interactive (mac/linux)",20570,27
+2013,reloaded productions,113400,219
+2013,reloaded productions,113420,19
+2013,remedy entertainment,108710,33
+2013,robot entertainment,201790,38
+2013,robot entertainment,102600,12
+2013,robotronic games,224500,2
+2013,rockstar games,12120,116
+2013,rockstar new england,12200,71
+2013,rockstar studios,204100,8
+2013,"rocksteady studios,feral interactive (mac)",200260,56
+2013,"rocksteady studios,feral interactive (mac)",35140,23
+2013,ronimo games,204300,630
+2013,runic games,200710,44
+2013,runic games,41500,23
+2013,running with scissors,223470,7
+2013,scs software,227300,45
+2013,secret exit ltd.,61600,1
+2013,sector3 studios,211500,60
+2013,sega,213610,2
+2013,"skybox labs,hidden path entertainment,ensemble studios",221380,56
+2013,snowblind studios,32800,42
+2013,sos,220860,7
+2013,squad,220200,48
+2013,stainless games,213850,5
+2013,subset games,212680,217
+2013,sumo digital,212480,2
+2013,supergiant games,107100,48
+2013,suspicious developments,206190,5
+2013,taleworlds entertainment,48700,210
+2013,"team bondi,rockstar leeds",110800,11
+2013,team meat,40800,159
+2013,team psykskallar,223710,48
+2013,techland,204450,9
+2013,telltale games,31280,332
+2013,telltale games,207610,300
+2013,telltale games,250320,7
+2013,terry cavanagh,221640,110
+2013,the behemoth,204360,336
+2013,"the creative assembly,feral interactive (mac),feral interactive (linux)",4700,274
+2013,"the creative assembly,feral interactive (mac),feral interactive (linux)",10500,151
+2013,the indie stone,108600,2
+2013,tomorrow corporation,221260,10
+2013,torn banner studios,219640,819
+2013,traveller's tales,249130,12
+2013,trendy entertainment,65800,195
+2013,treyarch,202970,444
+2013,treyarch,10090,184
+2013,trion worlds,39120,15
+2013,"trion worlds, inc.",224600,28
+2013,tripwire interactive,1250,8272
+2013,tripwire interactive,35450,64
+2013,two tribes,38740,1
+2013,uber entertainment,104700,56
+2013,ubisoft montreal,15120,28
+2013,ubisoft montreal,208480,4
+2013,ubisoft montreal,233270,4
+2013,"ubisoft montreal, massive entertainment, and ubisoft shanghai",220240,90
+2013,united front games,202170,42
+2013,unknown worlds entertainment,4920,80
+2013,valve,240,61158
+2013,valve,550,52080
+2013,valve,220,39536
+2013,vigil games,50620,23
+2013,volition,55230,759
+2013,"wb games montreal,splash damage",209000,5
+2013,wild shadow studios,200210,213
+2013,yager development,50300,24
+2013,zero point software,236370,1
+2014,2d boy,22000,33
+2014,"2k boston,2k australia",7670,804
+2014,"2k czech,feral interactive (mac)",50130,75
+2014,"2k marin,2k china,digital extremes,2k australia,feral interactive (mac)",8850,12
+2014,3909,239030,27
+2014,3f interactive,270570,6
+2014,5th cell media,218680,180
+2014,800 north and digital ranch,70000,174
+2014,alexander bruce,219890,8
+2014,amanita design,40700,6
+2014,ankama studio,215080,2
+2014,"arcen games, llc",40400,5
+2014,archive entertainment,250420,8
+2014,arkane studios,205100,154
+2014,arrowhead game studios,42910,987
+2014,artery games,45100,14
+2014,aspyr,214630,1
+2014,avalanche studios,8190,3020
+2014,beamng,284160,2
+2014,bethesda game studios,22300,246
+2014,bethesda game studios,22370,225
+2014,bethesda game studios,22330,102
+2014,"big huge games,38 studios",102500,2
+2014,bioware,17460,63
+2014,bioware,24980,33
+2014,bioware,47810,12
+2014,"bioware,aspyr (mac)",32370,114
+2014,bizarre creations,8400,21
+2014,black pants studio,205910,3
+2014,blue mammoth games,291550,8
+2014,bohemia interactive,221100,1840
+2014,bohemia interactive,107410,468
+2014,bohemia interactive,33930,288
+2014,boneloaf,285900,30
+2014,bossa studios,233720,320
+2014,bugbear entertainment,2990,17
+2014,capcom,21660,8
+2014,capcom,21690,7
+2014,capcom,45700,4
+2014,capcom vancouver,45740,3
+2014,carbon games,206500,28
+2014,cd projekt red,20900,246
+2014,cd projekt red,20920,168
+2014,chucklefish,211820,429
+2014,city interactive,34870,1
+2014,codebrush games,207230,105
+2014,"codemasters racing,feral interactive (mac)",44350,15
+2014,codemasters studios,12830,1
+2014,coffee stain studios,265930,484
+2014,coffee stain studios,210770,72
+2014,coffee stain studios,91600,72
+2014,cold beam games,49600,5
+2014,colossal order ltd.,225420,1
+2014,crackshell,239070,1
+2014,crate entertainment,219990,1
+2014,creative assembly,214950,78
+2014,"creative assembly,feral interactive (mac),feral interactive (linux)",214490,8
+2014,criterion games,24740,295
+2014,criterion games,47870,34
+2014,critical studio,218130,3
+2014,croteam,204340,2
+2014,cryptic studios,109600,288
+2014,cryptic studios,9900,5
+2014,crystal dynamics,7000,17
+2014,"crystal dynamics,feral interactive (mac),feral interactive (linux)",203160,117
+2014,crystal shard,283880,1
+2014,crytek,291480,252
+2014,crytek,17300,36
+2014,crytek studios,13520,17
+2014,cyberconnect2 co. ltd.,234670,8
+2014,day 1 studios,21100,17
+2014,daybreak game company,218230,3741
+2014,deep silver volition,206420,72
+2014,dennaton games,219150,32
+2014,devil's details,203750,1
+2014,dice,17410,1160
+2014,dice,24960,512
+2014,digital extremes,230410,10150
+2014,digitalmindsoft,64000,1
+2014,doctor entertainment ab,214420,10
+2014,dontnod entertainment,228300,2
+2014,double action factory,317360,3
+2014,double fine productions,3830,554
+2014,double fine productions,225260,4
+2014,"double helix games,rainbow studios,thq nordic",55140,18
+2014,doubledutch games,207140,6
+2014,dr studios,305260,1
+2014,dragonfly,239660,48
+2014,dylan fitterer,12900,303
+2014,"ea - maxis,aspyr (mac)",24780,25
+2014,ea los angeles,17480,52
+2014,ea los angeles,24840,8
+2014,ea los angeles,24790,5
+2014,ea redwood shores,17470,221
+2014,easygamestation,70400,2
+2014,edge of reality,208090,10680
+2014,edmund mcmillen and florian himsl,113200,2275
+2014,eidos studio hungary,8170,5
+2014,"elias viglione,jussi kukkonen",269210,3
+2014,elixir studios,3720,5
+2014,endnight games ltd,242760,30
+2014,ensemble studios,105450,84
+2014,"epic games, inc.",13210,23
+2014,"epic games, inc.",13230,8
+2014,eugen systems,222750,2
+2014,exe games inc.,335330,2
+2014,"expansive worlds,avalanche studios",253710,42
+2014,eyedentity games inc.,11610,32
+2014,facepunch studios,4000,3924300
+2014,facepunch studios,252490,3840
+2014,"firaxis games,aspyr (mac, linux)",8930,7950
+2014,"firaxis games,aspyr (mac, linux)",65980,6
+2014,"firaxis games,feral interactive (mac),feral interactive (linux)",200510,156
+2014,firefly studios,47410,17
+2014,fistful of frags team,265630,280
+2014,free lives,312990,35
+2014,freebird games,206440,11
+2014,freejam,301520,2480
+2014,frictional games,57300,58
+2014,frictional games,22120,5
+2014,fromsoftware,211420,55
+2014,frozenbyte,35720,24
+2014,frozenbyte,35700,23
+2014,gaijin games,63710,1
+2014,galactic cafe,221910,32
+2014,gameprix,300040,2
+2014,gas powered games,40100,84
+2014,gas powered games,9420,6
+2014,gas powered games,9350,3
+2014,gearbox software,50,219
+2014,gearbox software,8980,100
+2014,gearbox software,57900,6
+2014,"gearbox software,aspyr (mac &amp; linux)",49520,6862
+2014,giants software,220260,39
+2014,giants software,313160,4
+2014,going loud studios,230050,3
+2014,goldhawk interactive,223830,1
+2014,"gravvit ltd,forbes  consult ltd",290730,3
+2014,greenheart games,239820,6
+2014,grey havens,99900,2610
+2014,gsc game world,4500,14
+2014,haemimont games,57690,5
+2014,hardsuit labs,209870,560
+2014,headup games / crenetic,46540,1
+2014,hi-rez studios,17080,425
+2014,holotech studios,274920,1
+2014,humble hearts llc,236090,7
+2014,hunted cow studios,298160,1
+2014,hyper hippo games,312150,1
+2014,id software,282440,30
+2014,id software,2280,11
+2014,infinity ward,209160,72
+2014,"infinity ward,aspyr (mac)",10180,2366
+2014,"infinity ward,aspyr (mac)",7940,61
+2014,introversion software,1520,158
+2014,introversion software,233450,156
+2014,invent4 entertainment,34900,84
+2014,io interactive,28000,1
+2014,"io-interactive a/s,feral interactive (mac)",203140,91
+2014,ion storm,6910,92
+2014,ion storm,6980,21
+2014,"ironclad games,stardock entertainment",204880,9
+2014,ironhide game studio,246420,3
+2014,"irrational games,aspyr (mac),virtual programming (linux)",8870,320
+2014,ivory tower in collaboration with ubisoft reflections,241560,3
+2014,jagex limited,224540,1224
+2014,"jagex,artplant",299360,1
+2014,katauri,295550,1
+2014,kerberos productions inc.,233700,1
+2014,klei entertainment,214560,6
+2014,kudosoft,13600,2
+2014,last day of work,16120,1
+2014,lightmare studios,257730,3
+2014,lionhead studios,204030,9
+2014,looking glass studios,211600,3
+2014,lucasarts,32380,3
+2014,lukewarm media,215470,14
+2014,"m2h,blackmill games",242860,7
+2014,machine games,201810,6
+2014,mad otter games,263540,6
+2014,"masangsoft, inc.",242720,32
+2014,masthead studios ltd,293540,1
+2014,maxis™,17390,917
+2014,mechanist games,266070,1
+2014,meridian4,11240,9
+2014,meridian4,11340,2
+2014,might and delight,218740,20
+2014,minor key games,286100,1
+2014,mode 7,98200,5
+2014,"monochrome, inc",238430,14
+2014,"monolith productions, inc.",206210,368
+2014,"monolith productions, inc.,timegate",21090,2
+2014,mouldy toof studios,298630,4
+2014,muse games,209080,180
+2014,n3v games,24670,3
+2014,nabi studios,248570,130
+2014,"netherrealm studios,high voltage software",237110,6
+2014,new world interactive,222880,41
+2014,nexon,216150,39
+2014,nexon,273110,23
+2014,nexon,212160,6
+2014,"nicalis, inc.",250900,15
+2014,"nicalis, inc.",99700,1
+2014,nimbly games,41300,1
+2014,ninja theory,220440,2
+2014,no more room in hell team,224260,1173
+2014,noble empire corp.,262410,30
+2014,not specified,236390,2325
+2014,not specified,218620,2240
+2014,not specified,245550,20
+2014,number none,26800,17
+2014,obsidian entertainment,22380,924
+2014,obsidian entertainment,213670,30
+2014,oddworld inhabitants,15700,124
+2014,oddworld inhabitants,15710,5
+2014,opus,214830,3
+2014,osumia games,270150,1
+2014,outerlight ltd.,2400,609
+2014,overkill software,24240,1111
+2014,pandemic studios,6060,1740
+2014,paradox development studio,203770,24
+2014,paradox development studio,25890,6
+2014,paradox development studio,42960,6
+2014,petroglyph,32470,8
+2014,phosphor games studio,247730,5
+2014,pocketwatch games,113020,20
+2014,polytron corporation,224760,6
+2014,"popcap games, inc.",3480,11
+2014,"popcap games, inc.",3483,1
+2014,poppermost productions,244930,2
+2014,power of 2,213650,2
+2014,puppygames,203210,1
+2014,radical entertainment,10150,17
+2014,"raven software,aspyr (mac)",6020,17
+2014,re-logic,105600,72842
+2014,reality pump studios,7520,3
+2014,rebellion,63380,84
+2014,rebellion,10680,62
+2014,recoil games,107800,3
+2014,red barrels,238320,14
+2014,"redlynx ltd,ubisoft  shanghaï",220160,3
+2014,relic entertainment,4580,65
+2014,relic entertainment,9450,44
+2014,relic entertainment,4570,26
+2014,"relic entertainment,feral interactive (mac),feral interactive (linux)",231430,50
+2014,"relic entertainment,feral interactive (mac/linux)",15620,164
+2014,reloaded productions,113400,438
+2014,reloaded productions,113420,57
+2014,remedy entertainment,108710,11
+2014,replay studios,16720,9
+2014,reto-moto,227940,517
+2014,reverie world studios,227180,1
+2014,robot entertainment,201790,38
+2014,rockstar games,12120,348
+2014,rockstar games,12110,30
+2014,rockstar games,12100,24
+2014,rockstar new england,12200,71
+2014,rockstar north / toronto,12220,6
+2014,rockstar studios,204100,20
+2014,"rocksteady studios,feral interactive (mac)",200260,72
+2014,"rocksteady studios,feral interactive (mac)",35140,23
+2014,ronimo games,204300,1449
+2014,runic games,200710,264
+2014,running with scissors,223470,28
+2014,saber interactive,10130,1
+2014,scott cawthon,319510,21
+2014,scs software,227300,180
+2014,scs software,232010,2
+2014,secret exit ltd.,263760,8
+2014,sector3 studios,211500,30
+2014,sega,213610,1
+2014,shining rock software llc,242920,8
+2014,"skybox labs,hidden path entertainment,ensemble studios",221380,154
+2014,"sledgehammer games,raven software",209650,14
+2014,smartly dressed games,304930,32485
+2014,snowblind studios,32800,21
+2014,sos,220860,21
+2014,spicyhorse games,252150,2
+2014,squad,220200,240
+2014,stage-nana,264380,2
+2014,stainless games,255420,2
+2014,stainless games ltd,49470,2
+2014,"standing stone games, llc",212500,60
+2014,"standing stone games, llc",206480,3
+2014,star gem inc.,212070,91
+2014,starbreeze,253980,4
+2014,steel monkeys,91900,3
+2014,stegersaurus software inc.,296470,1
+2014,streum on studio,91700,5
+2014,stridemann,286080,4
+2014,studio radi-8,244630,9
+2014,subset games,212680,434
+2014,subsoap,38600,2
+2014,sumo digital,212480,4
+2014,supergiant games,107100,128
+2014,suspicious developments,206190,7
+2014,swing swing submarine,111800,4
+2014,taleworlds entertainment,48700,540
+2014,taleworlds entertainment,48720,6
+2014,team meat,40800,212
+2014,team psykskallar,223710,120
+2014,team17 digital ltd,22600,23
+2014,techland,204450,15
+2014,telltale games,31280,830
+2014,telltale games,207610,300
+2014,telltale games,250320,13
+2014,terry cavanagh,221640,209
+2014,terry cavanagh,70300,1
+2014,the behemoth,204360,1288
+2014,the behemoth,238460,56
+2014,the creative assembly,4760,402
+2014,"the creative assembly,feral interactive (mac)",34030,276
+2014,"the creative assembly,feral interactive (mac),feral interactive (linux)",4700,548
+2014,"the creative assembly,feral interactive (mac),feral interactive (linux)",10500,302
+2014,the indie stone,108600,20
+2014,the men who wear many hats,233740,1
+2014,tomorrow corporation,221260,10
+2014,torn banner studios,219640,819
+2014,traveller's tales,249130,36
+2014,traveller's tales,21000,6
+2014,"traveller's tales,feral interactive (mac)",285160,1
+2014,"trek industries, inc",104900,374
+2014,trendy entertainment,65800,195
+2014,treyarch,202970,3404
+2014,treyarch,10090,460
+2014,treyarch,42700,358
+2014,trion worlds,39120,5
+2014,"trion worlds, inc.",224600,35
+2014,tripwire interactive,1250,10904
+2014,tripwire interactive,35450,64
+2014,"triumph studios,virtual programming",11450,28
+2014,troika games,2600,152
+2014,turtle rock studios,273350,2
+2014,two tribes,38700,7
+2014,two tribes,38740,1
+2014,uber entertainment,104700,112
+2014,ubisoft,15130,4
+2014,ubisoft - san francisco,221680,1
+2014,ubisoft montreal,33230,66
+2014,ubisoft montreal,15100,48
+2014,ubisoft montreal,48190,17
+2014,"ubisoft montreal, massive entertainment, and ubisoft shanghai",220240,240
+2014,ubisoft romania,15200,3
+2014,ubisoft romania,48110,1
+2014,ubisoft toronto,235600,2
+2014,united front games,202170,147
+2014,unknown worlds entertainment,4920,100
+2014,valve,240,305790
+2014,valve,730,209451
+2014,valve,550,123256
+2014,vigil games,50620,23
+2014,vlambeer,212800,75
+2014,volition,55230,759
+2014,volition,9480,130
+2014,volition,55110,1
+2014,"volition,reactor zero,thq nordic",20500,15
+2014,vortal storm,270370,4
+2014,"wb games montreal,splash damage",209000,6
+2014,wild shadow studios,200210,1420
+2014,x-legend,268420,28
+2014,xlgames,304030,2
+2014,yager development,50300,54
+2014,young horses,224480,18
+2014,zachtronics,92800,80
+2014,zero point software,236370,4
+2015,"2k boston,2k australia",7670,670
+2015,"2k czech,feral interactive (mac)",50130,50
+2015,"2k marin,2k china,digital extremes,2k australia,feral interactive (mac)",8850,6
+2015,3 sprockets,228440,1
+2015,3909,239030,6
+2015,800 north and digital ranch,70000,116
+2015,ankama studio,215080,2
+2015,arkane studios,205100,44
+2015,arrowhead game studios,42910,705
+2015,ascaron entertainment ltd.,12330,3
+2015,aspyr,214630,1
+2015,avalanche studios,8190,604
+2015,avalanche studios,6880,40
+2015,bankroll studios,393420,2
+2015,battlegoat studios,25910,1
+2015,beam team games,313120,40
+2015,beamng,284160,4
+2015,benjamin rivers inc.,215670,2
+2015,bethesda game studios,22370,180
+2015,bethesda game studios,22300,164
+2015,bethesda game studios,22320,36
+2015,bioware,24980,11
+2015,"bioware,aspyr (mac)",32370,228
+2015,black isle studios,38410,1
+2015,blit software,205950,2
+2015,blue mammoth games,291550,96
+2015,"bluehole, inc.",323370,50
+2015,blueline games,312280,1
+2015,bohemia interactive,221100,400
+2015,bohemia interactive,107410,306
+2015,bohemia interactive,33930,48
+2015,boneloaf,285900,30
+2015,boss baddie,201570,6
+2015,brian cronin,18820,3
+2015,capcom,221040,12
+2015,capcom,21690,7
+2015,capcom,45760,1
+2015,carbon games,206500,12
+2015,ccp,8500,10
+2015,cd projekt red,20900,492
+2015,cd projekt red,20920,28
+2015,chucklefish,211820,198
+2015,codebrush games,207230,42
+2015,"codemasters racing,feral interactive (mac)",44350,3
+2015,coffee stain studios,265930,55
+2015,cold beam games,49600,5
+2015,colossal order ltd.,255710,13
+2015,crackshell,239070,1
+2015,crate entertainment,219990,2
+2015,creative assembly,214950,6
+2015,"creative assembly,feral interactive (mac),feral interactive (linux)",214490,3
+2015,criterion games,47870,17
+2015,cryptic studios,109600,144
+2015,cryptic studios,9900,5
+2015,"crystal dynamics,feral interactive (mac),feral interactive (linux)",203160,72
+2015,crytek,291480,126
+2015,crytek studios,13520,17
+2015,daedalic entertainment,214340,1
+2015,daybreak game company,218230,1392
+2015,deep red limited,11590,2
+2015,deep silver volition,206420,28
+2015,"deep silver volition,high voltage software",301910,3
+2015,dennaton games,219150,20
+2015,devil's details,71340,12
+2015,dice,17410,348
+2015,dice,24960,64
+2015,digital extremes,230410,5945
+2015,digital extremes,67370,8
+2015,dinosaur polo club,287980,3
+2015,doctor entertainment ab,214420,15
+2015,dontnod entertainment,228300,4
+2015,"dontnod entertainment,feral interactive (mac),feral interactive (linux)",319630,36
+2015,double action factory,317360,12
+2015,"double helix games,rainbow studios,thq nordic",55140,6
+2015,doubledutch games,207140,9
+2015,dovetail games,24010,19
+2015,dragonfly,239660,24
+2015,dylan fitterer,12900,101
+2015,ea los angeles,17480,52
+2015,easyanticheat ltd,282660,2
+2015,easygamestation,70400,4
+2015,eden industries,204180,3
+2015,eden studios,9930,6
+2015,edge of reality,208090,534
+2015,edmund mcmillen and florian himsl,113200,364
+2015,eforb,369400,1
+2015,"elias viglione,jussi kukkonen",269210,1
+2015,endnight games ltd,242760,12
+2015,ensemble studios,105450,24
+2015,"expansive worlds,avalanche studios",253710,21
+2015,eyedentity games inc.,11610,32
+2015,"fabio ferrara,davide caio,nicolò azzolini,antonio carcagnì,luigi di guida,tommaso vita",310370,24
+2015,facepunch studios,4000,1428750
+2015,facepunch studios,252490,1290
+2015,farsight studios,238260,4
+2015,firaxis games,3900,6
+2015,"firaxis games,aspyr (mac, linux)",8930,3816
+2015,"firaxis games,aspyr (mac, linux)",65980,4
+2015,"firaxis games,feral interactive (mac)",7600,8
+2015,"firaxis games,feral interactive (mac),feral interactive (linux)",200510,72
+2015,firefly studios,47410,51
+2015,firefly studios,47400,1
+2015,fistful of frags team,265630,28
+2015,free lives,312990,7
+2015,freebird games,206440,5
+2015,freejam,301520,1674
+2015,frictional games,57300,29
+2015,frictional games,22180,1
+2015,fromsoftware,211420,45
+2015,"frontier,aspyr (mac)",2700,114
+2015,frozenbyte,35720,8
+2015,galactic cafe,221910,2
+2015,gameore,281370,1
+2015,gameprix,300040,2
+2015,gas powered games,40100,28
+2015,gas powered games,9420,2
+2015,gearbox software,8980,200
+2015,gearbox software,130,35
+2015,"gearbox software,aspyr (mac &amp; linux)",49520,1880
+2015,going loud studios,230050,3
+2015,gravity interactive,215100,1
+2015,greenheart games,239820,6
+2015,grey havens,99900,696
+2015,hardsuit labs,209870,280
+2015,hi-rez studios,17080,340
+2015,hi-rez studios,386360,39
+2015,hidden path entertainment,18500,16
+2015,holotech studios,274920,1
+2015,hoobalugalar_x,355180,2
+2015,humble hearts llc,236090,2
+2015,hyper hippo games,346900,70
+2015,id software,2200,30
+2015,id software,2280,11
+2015,id software,208200,10
+2015,infinity ward,209160,9
+2015,"infinity ward,aspyr (mac)",10180,676
+2015,"infinity ward,aspyr (mac)",7940,61
+2015,introversion software,1520,158
+2015,introversion software,233450,156
+2015,invent4 entertainment,34900,546
+2015,io interactive,8080,7
+2015,io-interactive a/s,6860,91
+2015,"io-interactive a/s,feral interactive (mac)",203140,52
+2015,"ironclad games,stardock entertainment",204880,6
+2015,ironhide game studio,246420,1
+2015,"irrational games,aspyr (mac),virtual programming (linux)",8870,96
+2015,ivory tower in collaboration with ubisoft reflections,241560,1
+2015,jagex limited,224540,272
+2015,"jagex,artplant",299360,3
+2015,joycity,339610,5
+2015,"jumpstart games, inc.",332070,6
+2015,"kaos studios,digital extremes",55100,7
+2015,kerberos productions inc.,233700,1
+2015,klei entertainment,102840,4
+2015,kog,237310,10
+2015,kukouri,216110,1
+2015,kyle seeley,417860,20
+2015,lag studios,356670,8
+2015,lino slahuschek,338170,4
+2015,lionhead studios,204030,3
+2015,lucasarts,6000,36
+2015,"m2h,blackmill games",242860,14
+2015,machine games,201810,2
+2015,"masangsoft, inc.",242720,16
+2015,"monolith productions, inc.",206210,184
+2015,mouldy toof studios,298630,8
+2015,muse games,209080,60
+2015,muzzy lane software,46770,1
+2015,nabi studios,248570,78
+2015,nadeo,228760,1
+2015,"netherrealm studios,high voltage software",237110,2
+2015,new world interactive,222880,25
+2015,nexon,216150,26
+2015,nexon,273110,23
+2015,nexon,212160,12
+2015,nexon korea corp.,212200,1
+2015,"nicalis, inc.",250900,15
+2015,nimbly games,41300,1
+2015,nival,15170,6
+2015,no more room in hell team,224260,561
+2015,noble empire corp.,262410,5
+2015,not specified,218620,1300
+2015,not specified,236390,1200
+2015,not specified,264710,14
+2015,obsidian entertainment,22380,792
+2015,obsidian entertainment,213670,4
+2015,"obsidian entertainment,aspyr (mac, linux, &amp; windows update)",208580,3
+2015,oddworld inhabitants,15700,31
+2015,outerlight ltd.,2400,203
+2015,overkill software,24240,303
+2015,pandemic studios,6060,1218
+2015,paradox development studio,203770,12
+2015,paradox development studio,42960,3
+2015,phosphor games studio,247730,1
+2015,playdead,48000,19
+2015,playsaurus,363970,55
+2015,polytron corporation,224760,2
+2015,"popcap games, inc.",3320,148
+2015,power of 2,213650,2
+2015,"psyonix, inc.",252950,174
+2015,pyro studios,6800,1
+2015,"raven software,aspyr (mac)",6020,17
+2015,"raven software,aspyr (mac)",6030,3
+2015,re-logic,105600,60544
+2015,rebellion,63380,63
+2015,rebellion,10680,62
+2015,rebellion,3730,2
+2015,red barrels,238320,10
+2015,relic entertainment,4560,139
+2015,relic entertainment,9450,88
+2015,"relic entertainment,feral interactive (mac),feral interactive (linux)",231430,40
+2015,"relic entertainment,feral interactive (mac/linux)",15620,164
+2015,reloaded productions,113400,657
+2015,reloaded productions,113420,19
+2015,remedy entertainment,12140,18
+2015,reto-moto,227940,1081
+2015,robot entertainment,201790,38
+2015,"rocketeer games studio, llc",298240,6
+2015,rockstar games,12120,232
+2015,rockstar games,12110,15
+2015,rockstar north,271590,148
+2015,"rocksteady studios,feral interactive (mac)",35140,69
+2015,"rocksteady studios,feral interactive (mac)",200260,8
+2015,rogue snail,382490,6
+2015,ronimo games,204300,567
+2015,runic games,200710,22
+2015,running with scissors,223470,28
+2015,sandswept studios,92100,3
+2015,scott cawthon,319510,21
+2015,scs software,227300,75
+2015,sector3 studios,211500,30
+2015,shining rock software llc,242920,6
+2015,shumkov dmitriy,302830,28
+2015,shumkov dmitriy,409510,1
+2015,"skybox labs,hidden path entertainment,ensemble studios",221380,70
+2015,"sledgehammer games,raven software",209650,10
+2015,smartly dressed games,304930,18980
+2015,snowblind studios,32800,21
+2015,spark unlimited,226720,1
+2015,spasman games,346120,1
+2015,spiderling studios,346010,15
+2015,splash damage,333930,126
+2015,squad,220200,108
+2015,stage-nana,264380,2
+2015,stainless games,213850,5
+2015,stainless games,255420,1
+2015,stainless games ltd.,316010,3
+2015,"standing stone games, llc",212500,15
+2015,star gem inc.,212070,39
+2015,starbreeze,253980,4
+2015,stegersaurus software inc.,296470,2
+2015,streum on studio,91700,5
+2015,stridemann,286080,1
+2015,"studio wildcard,instinct games,efecto studios,virtual basement llc",346110,244
+2015,stunlock studios,6370,6
+2015,subset games,212680,155
+2015,sumo digital,212480,2
+2015,supergiant games,107100,32
+2015,suspicious developments,206190,1
+2015,taleworlds entertainment,48700,390
+2015,taleworlds entertainment,22100,9
+2015,taleworlds entertainment,48720,6
+2015,"team bondi,rockstar leeds",110800,22
+2015,team meat,40800,53
+2015,team psykskallar,223710,48
+2015,techland,204450,6
+2015,telltale games,207610,50
+2015,telltale games,250320,5
+2015,telltale games,234710,4
+2015,terry cavanagh,221640,11
+2015,terry cavanagh,70300,1
+2015,the behemoth,204360,448
+2015,the behemoth,238460,16
+2015,"the creative assembly,feral interactive (mac),feral interactive (linux)",10500,453
+2015,"the creative assembly,feral interactive (mac),feral interactive (linux)",4700,274
+2015,tobyfox,391540,56
+2015,tomorrow corporation,221260,5
+2015,torn banner studios,219640,567
+2015,traveller's tales,249130,8
+2015,"trek industries, inc",104900,238
+2015,trendy entertainment,65800,195
+2015,trendy entertainment,236110,14
+2015,treyarch,10090,368
+2015,treyarch,42700,358
+2015,treyarch,202970,148
+2015,trion worlds,304050,289
+2015,trion worlds,39120,5
+2015,"trion worlds, inc.",224600,7
+2015,tripwire interactive,1250,3008
+2015,tripwire interactive,35450,144
+2015,"tt fusion,traveller's tales,feral interactive (mac)",267530,1
+2015,turtle rock studios,273350,12
+2015,two tribes,38700,7
+2015,uber entertainment,104700,56
+2015,ubisoft montreal,33230,66
+2015,"ubisoft montreal, massive entertainment, and ubisoft shanghai",220240,60
+2015,ubisoft toronto,235600,1
+2015,united front games,202170,21
+2015,valve,730,280999
+2015,valve,240,101930
+2015,valve,220,45184
+2015,vigil games,50620,23
+2015,volition,55230,345
+2015,volition,9480,195
+2015,"volition,reactor zero,thq nordic",20500,30
+2015,vostok games,355840,2
+2015,"wb games montreal,splash damage",209000,2
+2015,wild shadow studios,200210,710
+2015,x-legend,268420,35
+2015,xlgames,304030,3
+2015,yager development,50300,36
+2015,young horses,224480,3
+2015,zero point software,236370,1
