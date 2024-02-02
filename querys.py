@@ -31,7 +31,6 @@ def developer(desarrollador: str) -> pd.DataFrame:
                    If the developer is not found, the DataFrame will contain a message.
     """
     # Filter the dataframe by the provided developer
-    desarrollador = desarrollador.lower()
     developer_data = developer_df[developer_df['developer'] == desarrollador]
 
     # Check if the developer was found
