@@ -40,7 +40,7 @@ def developer_reviews_analysis(desarrolladora: str):
     result = querys.developer_reviews_analysis(desarrolladora)
     return str(result)
 
-@app.get("/game recommendation")
+@app.get("/recomendacion _uego")
 def sentiment_analysis(item: str):
     result = querys.recomendacion_juego(item)
     return str(result)
