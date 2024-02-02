@@ -95,35 +95,53 @@ Float values in the majority of columns represent null values and were managed c
 
 ### The goal is to be able to provide these querys.
 
+## Note:"It was decided to handle the entire project in English; however, the function signatures and their return will be maintained in the requested language, as it is not a good practice to change their names. In the function that uses machine learning, the parameter name is changed because having a variable with spaces would not be valid, as requested in the instructions."
+
 
 ## Game Analytics Functions
 
-### PlayTimeGenre
-
 ```python
-def PlayTimeGenre(genre: str):
-    # Returns the year with the most played hours for the given genre.
-    # Example return: {"Year of release with most played hours for Genre X": 2013}
+def developer(desarrollador: str):
+    """
+    Returns the number of items and the percentage of Free content per year for the given developer.
+    Example return: 
+    Año    Cantidad de Items    Contenido Free
+    2023   50                  27%
+    2022   45                  25%
+    xxxx   xx                  xx%
+    """
 
-def UserForGenre(genre: str):
-    # Should return the user who has accumulated the most played hours for the given genre
-    # and a list of the accumulated played hours per year.
-    # Example return: {"User with most played hours for Genre X": "us213ndjss09sdf", "Played hours": [{"Year": 2013, "Hours": 203}, {"Year": 2012, "Hours": 100}, {"Year": 2011, "Hours": 23}]}
+def userdata(User_id: str):
+    """
+    Returns the amount of money spent by the user, the percentage of recommendation based on reviews.recommend,
+    and the number of items.
+    Example return: 
+    {"Usuario X": "us213ndjss09sdf", "Dinero gastado": "200 USD", "% de recomendación": "20%", "cantidad de items": 5}
+    """
 
-def UsersRecommend(year: int):
-    # Returns the top 3 games MOST recommended by users for the given year.
-    # (reviews.recommend = True and positive/neutral comments)
-    # Example return: [{"Rank 1": X}, {"Rank 2": Y}, {"Rank 3": Z}]
+def UserForGenre(genero: str):
+    """
+    Returns the user with the most played hours for the given genre and a list of accumulated played hours per release year.
+    Example return: 
+    {"Usuario con más horas jugadas para Género X": "us213ndjss09sdf", 
+     "Horas jugadas": [{"Año": 2013, "Horas": 203}, {"Año": 2012, "Horas": 100}, {"Año": 2011, "Horas": 23}]}
+    """
 
-def UsersWorstDeveloper(year: int):
-    # Returns the top 3 developers with the LEAST recommended games by users for the given year.
-    # (reviews.recommend = False and negative comments)
-    # Example return: [{"Rank 1": X}, {"Rank 2": Y}, {"Rank 3": Z}]
+def best_developer_year(año: int):
+    """
+    Returns the top 3 developers with the MOST recommended games by users for the given year.
+    (reviews.recommend = True and positive comments)
+    Example return: 
+    [{"Puesto 1": X}, {"Puesto 2": Y}, {"Puesto 3": Z}]
+    """
 
-def sentiment_analysis(developer_company: str):
-    # According to the developer company, returns a dictionary with the company name as the key
-    # and a list with the total number of user review records categorized with sentiment analysis as the value.
-    # Example return: {'Valve': {'Negative': 182, 'Neutral': 120, 'Positive': 278}}
+def developer_reviews_analysis(desarrolladora: str):
+    """
+    According to the developer, returns a dictionary with the developer's name as the key
+    and a list with the total number of user review records categorized with sentiment analysis as the value.
+    Example return: 
+    {'Valve': {'Negative': 182, 'Positive': 278}}
+    """
 ```
 
  ## Recommendation system.
@@ -131,7 +149,7 @@ def sentiment_analysis(developer_company: str):
 Finally, a machine learning model based on cosine similarity is developed to create a recommendation system. The function game_recommendation(product_id) is implemented.
 
 ```python
-def game_recommendation(product_id):
+def recomendacion_juego(product_id):
     # By entering the product ID, receives a list of 5 recommended games similar to the one entered.
 ```
 

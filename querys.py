@@ -1,6 +1,5 @@
 
 import pandas as pd
-from datetime import datetime
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 from itertools import islice
@@ -19,17 +18,17 @@ game_recomendation_df = pd.read_csv('simplified-data/game_recomendation.csv')
 
 
 
-def developer(desarrollador: str) -> dict:
+def developer(desarrollador: str) -> pd.DataFrame:
     """
     Retrieve information for a given developer.
 
     Parameters:
-    - developer_name (str): The name of the developer to retrieve information for.
+    - desarrollador (str): The name of the developer to retrieve information for.
 
     Returns:
-    - dict: A dictionary containing information about the developer, including 'year',
-            'items quantity', 'free content', and 'free content percentage'.
-            If the developer is not found, the dictionary will contain a message.
+    - pd.DataFrame: A DataFrame containing information about the developer,
+                   including 'Año', 'Cantidad de items', and 'Contenido Free'.
+                   If the developer is not found, the DataFrame will contain a message.
     """
     # Filter the dataframe by the provided developer
     desarrollador = desarrollador.lower()
@@ -37,20 +36,22 @@ def developer(desarrollador: str) -> dict:
 
     # Check if the developer was found
     if developer_data.empty:
-        return {"message": f"No data found for developer: {desarrollador}"}
+        return pd.DataFrame({"message": [f"No data found for developer: {desarrollador}"]})
     else:
         # Retrieve 'year', 'items quantity', and 'free content' columns
-        year = developer_data['year'].values[0]
-        items_quantity = developer_data['items_quantity'].values[0]
-        free_content_percentage = developer_data['free_content_percentage'].values[0]
+        years = developer_data['year'].values
+        items_quantities = developer_data['items_quantity'].values
+        free_content_percentages = developer_data['free_content_percentage'].values
 
-        
-        # Return a dictionary with the requested columns and percentage
-        return {
-            'Año': year,
-            'Cantidad de items': items_quantity,
-            'Contenido Free': free_content_percentage
+        # Create a DataFrame with the requested columns and formatted percentage values
+        data = {
+            'Año': years,
+            'Cantidad de items': items_quantities,
+            'Contenido Free': free_content_percentages
         }
+        result_df = pd.DataFrame(data)
+
+        return result_df
 
 def userdata(User_id: str) -> dict:
     """
@@ -77,39 +78,47 @@ def userdata(User_id: str) -> dict:
     else:
         # Retrieve 'spent money', 'recommendation percentage', and 'items quantity'
         spent_money = user_data['spent_money'].values[0]
-        recommendation_percentage = user_data['recommendation percentage'].values[0]
+        recommendation_percentage = user_data['recommendation_percentage'].values[0]
         items_quantity = user_data['items_quantity'].values[0]
 
         # Return a dictionary with the requested information
         return {
-            'spent money': spent_money,
-            'recommendation percentage': recommendation_percentage,
-            'items quantity': items_quantity
+            'Usuario ': User_id,
+            'Dinero gastado': spent_money,
+            '% de recomendación': recommendation_percentage,
+            'cantidad de items': items_quantity
         }
 
 
-def UserForGenre(genre: str) -> str:
+def UserForGenre(genero):
     """
-    Filter the DataFrame for the specified genre, find the user with the most played hours, and create a list of accumulated hours played per year.
+    Generate user statistics for a given genre.
 
-    Input:
-    - genre (str): The genre for filtering the DataFrame.
-      Uppercase or lowercase of the parameter will not affect the result
+    Parameters:
+    - genre (str): The genre for which user statistics are calculated.
 
-    Output:
-    - str: A string representation of a dictionary containing the user with the most played hours for the specified genre and a list of accumulated hours per year.
+    Returns:
+    dict: A dictionary containing user statistics, including the user with the highest playtime for the given genre
+          and a list of accumulated playtime per release year.
     """
-    genre = genre.lower()
-    df_genre = user_for_genre_df[user_for_genre_df['genres'] == genre]
-    user_most_hours = df_genre.loc[df_genre['playtime_forever'].idxmax(), 'user']
-    accumulation_hours_per_year = df_genre.groupby('year')['playtime_forever'].sum().reset_index()
-    accumulation_hours_per_year = accumulation_hours_per_year.rename(columns={'year': 'Año', 'playtime_forever': 'Horas'})
-    list_accumulation_hours = accumulation_hours_per_year.to_dict(orient='records')
-    to_return = {
-        "Usuario con más horas jugadas para Género {}".format(genre): user_most_hours,
-        "Horas jugadas": list_accumulation_hours
-    }
-    return str(to_return)
+    # Filter the DataFrame by the provided genre
+    genre_df = user_for_genre_df[user_for_genre_df['genre'] == genero]
+
+    # Find the user with the highest playtime for the given genre
+    max_user = genre_df.loc[genre_df['playtime_forever'].idxmax()]['user_id']
+
+    # Create a list of accumulated playtime per release year
+    genre_df['release_year'] = pd.to_datetime(genre_df['release_date']).dt.year
+    horas_por_año = genre_df.groupby('release_year')['playtime_forever'].sum().reset_index()
+    horas_por_año = horas_por_año.rename(columns={'release_year': 'Año', 'playtime_forever': 'Horas'})
+    horas_por_año = horas_por_año.to_dict(orient='records')
+
+    # Create the return dictionary
+    result = {"Usuario con más horas jugadas para Género {}".format(genero): max_user, "Horas jugadas": horas_por_año}
+
+    return result
+
+
 
 
 

@@ -1,25 +1,13 @@
  
-from fastapi import FastAPI
-from fastapi.responses import JSONResponse
+from fastapi import FastAPI, Response
 from starlette.responses import RedirectResponse
 import importlib
 import querys
-from fastapi.middleware.cors import CORSMiddleware
-import uvicorn
-
 importlib.reload(querys)
 
 app = FastAPI()
 
 
-# Basic CORS configuration
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["GET"],
-    allow_headers=["*"],
-)
 
 
 @app.get("/")
@@ -29,7 +17,8 @@ def rooth():
 @app.get("/developer")
 def developer(desarrollador: str):
     result = querys.developer(desarrollador)
-    return str(result)
+    table_string = result.to_string()
+    return Response(content=table_string, media_type="text/plain")
 
 @app.get("/userdata")
 def userdata(User_id: str):
