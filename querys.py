@@ -167,7 +167,7 @@ def developer_reviews_analysis(developer_company: str) -> dict:
     developer_company = developer_company.lower()
     company_df = developer_reviews_analysis_df[developer_reviews_analysis_df['developer'] == developer_company]
     result_dict = {developer_company: []}
-    sentiment_columns = ['Negative', 'Neutral', 'Positive']
+    sentiment_columns = ['Negative', 'Positive']
     for sentiment in sentiment_columns:
         count = company_df[sentiment].values[0]
         result_dict[developer_company].append({sentiment: count})
